@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Verify your HemoLink account with a one-time code.">
+
+    <title>Verify Your Account | HemoLink</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- Simple header: logo + a way back to the main site (no full nav here) -->
+<header>
+
+<nav>
+
+    <a href="index.html" class="logo logo-link">
+
+        <i class="fa-solid fa-droplet"></i>
+
+        <span>HemoLink</span>
+
+    </a>
+
+    <a href="index.html" class="back-home-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+
+</nav>
+
+</header>
+
+
+<!-- ================= OTP VERIFICATION SECTION ================= -->
+
+<section class="register-page">
+
+    <div class="register-container auth-container">
+
+        <div class="register-intro">
+            <h1>Verify Your Account</h1>
+            <p id="otpIntro">Enter the 6-digit code we sent to your email to finish creating your account.</p>
+        </div>
+
+        <!-- Demo mode: there's no real email/SMS service wired up yet, so the
+             code is shown here instead of actually being sent anywhere. -->
+        <div class="demo-otp-banner" id="demoOtpBanner">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Demo mode — HemoLink isn't connected to a real email service yet.
+                Your verification code is <strong id="demoOtpCode">------</strong>.
+            </span>
+        </div>
+
+        <form class="register-form" id="otpForm" novalidate>
+
+            <div class="otp-inputs" id="otpInputs">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 1">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 2">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 3">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 4">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 5">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box" aria-label="Digit 6">
+            </div>
+
+            <span class="field-error otp-error" id="otpError"></span>
+
+            <button type="submit" class="proceed-btn">Verify Code</button>
+
+            <p class="auth-switch">
+                Didn't get a code? <a href="#" id="resendOtp">Resend code</a>
+            </p>
+
+        </form>
+
+        <!-- Shown once the code is verified -->
+        <div class="register-success" id="otpSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>You're all set!</h3>
+            <p>Your HemoLink account is verified and ready to go.</p>
+            <a href="index.html" class="about-btn">Back to Home</a>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="otp.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Log in to your HemoLink account.">
+
+    <title>Login | HemoLink</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<!-- Simple header: logo + a way back to the main site (no full nav here) -->
+<header>
+
+<nav>
+
+    <a href="index.html" class="logo logo-link">
+
+        <i class="fa-solid fa-droplet"></i>
+
+        <span>HemoLink</span>
+
+    </a>
+
+    <a href="index.html" class="back-home-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Home
+    </a>
+
+</nav>
+
+</header>
+
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<section class="register-page">
+
+    <div class="register-container auth-container">
+
+        <div class="register-intro">
+            <h1>Welcome Back</h1>
+            <p>Log in to manage your donor profile, track your donation history,
+                and respond to nearby blood requests.
+            </p>
+        </div>
+
+        <form class="register-form" id="loginForm" novalidate>
+
+            <div class="form-group">
+                <label for="loginEmail">Email Address</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label-row">
+                    <label for="loginPassword">Password</label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                <input type="password" id="loginPassword" name="loginPassword" minlength="8" required>
+                <span class="field-error" id="loginError"></span>
+            </div>
+
+            <!-- Face Verification -->
+            <h3 class="form-section-title"><i class="fa-solid fa-camera"></i> Face Verification</h3>
+
+            <p class="face-scan-note">
+                Optional: scan your face to compare it against the photo saved when you
+                registered on this device.
+            </p>
+
+            <div class="face-scan-box">
+
+                <div class="face-frame" id="faceFrame">
+                    <video id="faceVideo" autoplay muted playsinline></video>
+                    <img id="faceCaptured" alt="Captured face photo">
+                    <div class="scan-line" id="scanLine"></div>
+                </div>
+
+                <p class="face-status" id="faceStatus">Camera is off. Click "Start Camera" to begin.</p>
+
+                <div class="face-buttons">
+                    <button type="button" class="face-btn" id="startCameraBtn">
+                        <i class="fa-solid fa-video"></i> Start Camera
+                    </button>
+                    <button type="button" class="face-btn face-btn-primary" id="scanFaceBtn" disabled>
+                        <i class="fa-solid fa-circle-dot"></i> Scan Face
+                    </button>
+                    <button type="button" class="face-btn" id="retakeBtn">
+                        <i class="fa-solid fa-rotate"></i> Retake
+                    </button>
+                </div>
+
+                <!-- filled in by login.js once a comparison has run -->
+                <div class="face-match-result" id="faceMatchResult"></div>
+
+            </div>
+
+            <label class="terms-checkbox">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                Keep me logged in on this device.
+            </label>
+
+            <button type="submit" class="proceed-btn">Login</button>
+
+            <p class="auth-switch">
+                Don't have an account? <a href="register.html">Create one</a>
+            </p>
+
+        </form>
+
+        <!-- Shown in place of the form once login is submitted -->
+        <div class="register-success" id="loginSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Welcome back!</h3>
+            <p>You've successfully logged in to your HemoLink account.</p>
+            <a href="index.html" class="about-btn">Back to Home</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Shared face-scan camera logic, then this page's form/submit logic -->
+<script src="face-scan.js"></script>
+<script src="login.js"></script>
+
+</body>
+
+</html>

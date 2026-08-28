@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="HemoLink is a cloud-based Blood Bank Management System connecting donors, blood banks, and healthcare facilities.">
+
+    <meta name="keywords" content="HemoLink, Blood Bank Management System, Blood Donation, Healthcare">
+
+    <meta name="author" content="HemoLink">
+
+    <title>HemoLink | Connecting Blood Donors, Saving Lives</title>
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header>
+
+<nav>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-droplet"></i>
+
+        <span>HemoLink</span>
+
+    </div>
+
+    <!-- Desktop nav links (hidden on mobile, shown inside the dropdown instead) -->
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#features">Features</a></li>
+
+        <li><a href="#how">How It Works</a></li>
+
+        <li><a href="#blood-facts">Blood Facts</a></li>
+
+        <li><a href="#testimonials">Testimonials</a></li>
+
+        <li><a href="#faq">FAQs</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+
+        <!-- Login button opens a small popover to choose Login vs Sign Up -->
+        <div class="login-wrapper">
+
+            <a href="#" class="login-btn" onclick="toggleLoginMenu(event)">
+                Login
+            </a>
+
+            <div class="login-menu" id="loginMenu">
+
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Already have an account?
+                </a>
+
+                <a href="register.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Want to create an account?
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hamburger Icon -->
+
+        <div class="menu-icon" onclick="toggleMenu()">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+
+    </div>
+
+
+</nav>
+
+
+
+
+<!-- Mobile dropdown menu (shown when the hamburger icon is tapped) -->
+<div class="dropdown-menu" id="dropdownMenu">
+
+
+    <a href="#home">
+        <i class="fa-solid fa-house"></i> Home
+    </a>
+
+
+    <a href="#about">
+        <i class="fa-solid fa-circle-info"></i> About
+    </a>
+
+
+    <a href="#features">
+        <i class="fa-solid fa-star"></i> Features
+    </a>
+
+
+    <a href="#how">
+        <i class="fa-solid fa-gears"></i> How It Works
+    </a>
+
+
+    <a href="#blood-facts">
+        <i class="fa-solid fa-droplet"></i> Blood Facts
+    </a>
+
+
+    <a href="#testimonials">
+        <i class="fa-solid fa-comments"></i> Testimonials
+    </a>
+
+
+    <a href="#faq">
+        <i class="fa-solid fa-circle-question"></i> FAQs
+    </a>
+
+
+    <a href="#contact">
+        <i class="fa-solid fa-phone"></i> Contact
+    </a>
+
+
+</div>
+
+</header>
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero" id="home">
+
+
+    <div class="hero-text">
+
+
+        <h1>
+            Connecting Blood Donors,
+            <span>Saving Lives.</span>
+        </h1>
+
+
+        <p>
+            HemoLink is a smart cloud-based Blood Bank Management System 
+            designed to connect eligible blood donors with healthcare 
+            facilities, improve blood inventory management, and support 
+            faster emergency response.
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a href="#" class="donate-btn">
+                <i class="fa-solid fa-heart"></i>
+                Donate Blood
+            </a>
+
+
+            <a href="#about" class="learn-btn">
+                Learn More
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hero-image">
+
+
+        <img src="IMG/KAY/doctor.jpg" alt="Blood donation">
+
+
+    </div>
+
+
+</section>
+<!--STATISTICS SECTION-->
+<section class="statistics">
+    <div class="stat-card">
+        <i class="fa-solid fa-users"></i>
+        <h2>5,000+</h2>
+        <p>Registered Donors.</p>
+    </div>
+    <div class="stat-card">
+        <i class="fa-solid fa-hospital"></i>
+        <h2>25+</h2>
+        <p>Patner hospitals.</p>
+    </div>
+    <div class="stat-card"> 
+        <i class="fa-solid fa-droplet"></i>
+        <h2>1,200+</h2>
+        <p>Blood Units Available.</p>
+    </div>
+    <div class="stat-card">
+        <i class=" fa-solid fa-heart-pulse"></i>
+        <h2>3,000+</h2>
+        <p>Emergency Requests Completed.</p>
+    </div>
+
+</section>
+<!--ABOUT SECTION-->
+<section class="about" id="about">
+    <div class="about-image">
+        <img src="IMG/KAY/brotherman.jpg" alt="About HemoLink">
+    </div>
+    <div class="about-content">
+        <h2>ABOUT HEMOLINK.</h2>
+        <h5> Transforming Blood Donation Through Smart Technology.</h5>
+        <p>HemoLink is an innovative cloud-based Blood Bank Management System developed to improve the way blood is collecte,
+            managed and distributed. The platform connects blood donors,blood banks and healthcare facilities through 
+            digital System.
+        </p>
+        <p> By providing real-time blood inventory monitoring, smart donor matching and emergency blood Request management,HemoLink 
+            helps reduce delays, minimise blood shortages and support healthcare professionals in saving lives more efficiently.
+        </p>
+        <div class="about-features">
+            <div class="feature">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Quick Donor Registration.</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-droplet"></i>
+                <span>Real-Time Blood Inventory.</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-bell"></i>
+                <span>Emergency Donor Alerts.</span>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Safe & Secure Healthcare platform.</span>
+            </div>
+        </div>
+        <a href="#" class="about-btn"> Learn More</a>
+    </div>
+</section>
+<!--FEATURES SECTION-->
+<section class="features" id="features">
+    <div class="section-title">
+        <h1>OUR FEATURES.</h1>
+        <h3> Smart Solutions  For Better Blood Management. </h3>
+        <p> HemoLink provides innovative feature that simplify blood donation,
+            improve inventory management and support healthcare facilities during
+             emergencies.
+        </p>
+
+    </div>
+    <div class="feature-container">
+        <div class="feature-card">
+            <i class="fa-solid fa-user-plus"></i>
+            <h3>Donor Registration.</h3>
+            <p>Register eligible blood donors quickly and securely while maintaining
+                accurate donor records.
+            </p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-droplet"></i>
+            <h3>Blood Inventory.</h3>
+            <p>Monitor blood availability, blood groups, expiry dates and storage infomation in real time.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Emergency Requests.</h3>
+            <p>Send urgent blood requests and notify suitable donors immediatly during emergencies.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Appointment Booking</h3>
+            <p>Allow donors to schedule donation appointment conveniently and reducing waiting time.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Reports & Analytics.</h3>
+            <p>Generate reports to help administrators monitor donations, inventory and System performance.
+            </p>
+        </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure Access.</h3>
+            <p> Protect donor information through secure authentication and role-based access control.</p>
+        </div>
+    </div>
+</section>
+<!-- HOW IT WORKS-->
+<section class="how-it-works" id="how">
+    <div class="section-title">
+        <h1>HOW IT WORKS.</h1>
+        <h4>Simple Steps That Saves Lives.</h4>
+        <p> HemoLink  simplifies the blood donation process by connecting donors,
+            healthcare facilities and blood banks through one intelligent platform.
+        </p>
+
+    </div>
+    <div class="steps-container">
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-image">
+                <img src="IMG/KAY/register favourite.jpg" alt="Donor Registration">
+            </div>
+            <h3>Register.</h3>
+            <p>Create your HemoLink account and provide your infomation and blood group details securely.</p>
+
+        </div>
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-image">
+                <img src="IMG/KAY/blood screening.jpg" alt="Health Screening">
+            </div>    
+            <h3>Health Screening.</h3>
+            <p>Complete the required health screening to confirm your eligibility and ensure safe blood donation.</p>
+
+            
+        </div>
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-image">
+                <img src="IMG/KAY/donate blood.jpg" alt="Blood donation">
+            </div>
+            <h3>Donate Blood.</h3>
+            <p>Donate blood safely with the support of qualified healthcare proffessionals at an approved facility.</p>
+        </div>
+        <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-image">
+                <img src="IMG/KAY/Emergency response.jpg" alt="Emergency blood response">
+
+            </div>
+            <h3>Emergency Response.</h3>
+            <p>Compatible blood is made available to healthcare facilities when it is urgently needed.</p>
+        </div>
+
+    </div>
+    
+
+        
+
+</section> 
+<!--why donate blood-->
+<section class="why-donate" id="why-donate">
+    <div class="why-donate-container">
+        <div class="why-donate-image">
+            <img src="IMG/KAY/wonder 2.jpg" alt="Blood Donation">
+            <div class="donation-badge">
+                <i class="fa-solid fa-heart"></i>
+                <span>Every Donation Matters</span>
+
+            </div>
+
+        
+        </div>
+        <!--Content-->
+        <div class="why-donate-content">
+            <h5>WHY DONATE BLOOD?</h5>
+            <h2> your Donation can help save a life!</h2>
+            <p class="why-intro">
+            Blood is needed every day for patients treatment, surgery and emergency care.
+            By blood,you can help healthcare facilities a realiable supply for people who need it.
+            </p>
+            
+            <!--Reasons-->
+            <div class="donation-reasons">
+            <div class="donation-reason">
+               <div class="reason-icon">
+                   <i class="fa-solid fa-hand-holding-medical"></i>
+
+               </div>
+        
+               <div>
+                   <h4>Help Save Lives.</h4>
+                   <p>
+                   Your donation can provide vital to patients who need
+                        blood for recovery.
+                   </p>
+                </div>    
+            </div>
+ 
+            <div class="donation-reason">
+               <div class="reason-icon">
+                   <i class="fa-solid fa-hospital"></i>
+               </div>
+        
+               <div>
+                   <h4>Support Healthcare.</h4>
+                   <p>
+                   Blood donations help healthcare facilities maintain an adequate supply for patients.
+                   </p>
+                </div>    
+            </div>
+            <div class="donation-reason">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-truck-medical"></i>
+
+                </div>
+                <div>
+                    <h4>Be Ready For Emergencies.</h4>
+                    <p>A realiable blood supply helps healthcare teams respond quickly when emergencies occur. </p>
+                </div>
+
+            </div>
+            <div class="donation-reason">
+                <div class="reason-icon">
+                     <i class="fa-solid fa-people-group"></i>
+
+                </div>
+                <div>
+                    <h4>Strengthen Your Community.</h4>
+                    <p>Donating blood is a meaningful way to support
+                    the health and wellbeing of your Community.
+
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--BLOOD FACTS-->
+<section class="blood-facts" id="blood-facts">
+    <div class="section-title">
+        <h1>BLOOD FACTS.</h1>
+        <h4>Know More About Blood Donation.</h4>
+        <p>Understanding blood and blood donation can help make
+            us make informed decisions and encourage more people 
+            to become regular donors.
+        </p>
+    </div>
+    <div class="facts-container">
+        <div class="fact-card">
+            <div class="fact-icon">
+                <i class="fa-solid fa-droplet"></i>
+            </div>
+            <h3>Blood Is Essential.</h3>
+            <p>Blood is needed everyday for surgeries,medical treatments,
+                emergencies and patients recovering from serious illnesses.
+            </p>
+
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h3>One Donation Can Help.</h3>
+            <p>A single blood donation can contribute to the care of multiple 
+                patients when the blood is seperated into different components.
+            </p>
+
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Blood Has A Limited Life.</h3>
+            <p>Donated blood components have limited storage periods,
+                making regular donations important for maintaining a 
+                reliable supply.
+            </p>
+
+        </div>
+        <div class="fact-card">
+            <div class="fact-icon">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+            <h3>Every Donor Matters.</h3>
+            <p>Regular voluntary donors help blood banks maintain
+                supplies and effectively when emergencies occur.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--TESTIMONIALS-->
+<section class="testimonials" id="testimonials">
+    <div class="section-title">
+        <h1>TESTIMONIALS</h1>
+        <h4>Voices From Our Community.</h4>
+        <p>Hear from donors and healthcare partners who rely on HemoLink
+            to give and receive blood when it matters most.
+        </p>
+    </div>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">HemoLink made it so simple to find a donation center near me.
+                I get reminders when I'm eligible again, and I can actually see the impact
+                of every donation I make.
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">MC</div>
+                <div class="author-info">
+                    <h4>Montgomery Chifunda</h4>
+                    <span>Regular Donor</span>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">During a mass casualty event, HemoLink helped us locate compatible
+                donors within minutes. It has become an essential part of how we manage
+                our blood supply.
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">FM</div>
+                <div class="author-info">
+                    <h4>Dr. Faith Mulungushi Musonda</h4>
+                    <span>Emergency Physician, City General Hospital</span>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">I was nervous about donating for the first time, but the registration
+                and health screening process was quick and the staff were amazing.
+                I'll definitely be back.
+            </p>
+            <div class="testimonial-author">
+                <div class="author-avatar">CS</div>
+                <div class="author-info">
+                    <h4>Choolwe Sichundu</h4>
+                    <span>First-Time Donor</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--FAQ-->
+<section class="faq" id="faq">
+    <div class="section-title">
+        <h1>FAQs.</h1>
+        <h4>Got Questions? We Have Answers.</h4>
+        <p>Everything you need to know before your first donation
+            or emergency blood request.
+        </p>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">
+                Who is eligible to donate blood?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Most healthy adults aged 18 to 65, weighing at least 50kg, can donate.
+                    A quick health screening on the day confirms your eligibility.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                How often can I donate blood?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>You can safely donate whole blood every  after 3 months (12 weeks), giving
+                    your body enough time to fully replenish.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Is blood donation safe?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. Every donation uses new, sterile, single-use equipment and is
+                    supervised by trained healthcare professionals.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                How long does the donation process take?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>The actual donation takes about 10 to 15 minutes, though your full visit
+                    including registration and screening takes around 45 minutes.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                How will I know my blood type?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Your blood type is tested during your first donation and saved to your
+                    HemoLink profile for future reference.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Can I request blood urgently through HemoLink?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. Registered hospitals can send emergency requests through the platform,
+                    which instantly notifies compatible donors nearby.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <div class="footer-container">
+        <div class="footer-col footer-brand">
+            <div class="logo">
+                <i class="fa-solid fa-droplet"></i>
+                <span>HemoLink</span>
+            </div>
+            <p>Connecting blood donors, blood banks and healthcare facilities
+                through one smart, cloud-based platform.
+            </p>
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#blood-facts">Blood Facts</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#">Donor Eligibility</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul class="footer-contact">
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Evelyn Hone College</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0770038140</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Kaychitimpa@gmail.com</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 <span>HemoLink</span>. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
+
+<!--https://github.com/kaychitimpa-stack/HEMOLINK-PROJECT.git-->
